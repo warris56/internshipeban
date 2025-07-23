@@ -1,17 +1,17 @@
 import Image from "next/image";
-import serviceImg1 from "@/images/sun.webp"; // Replace with your actual images
+import serviceImg1 from "@/images/sun.webp";
 import serviceImg2 from "@/images/cashier.webp";
 
 export default function ServicesSection() {
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section className="bg-gray-50 py-20 px-4">
       <div className="mx-auto max-w-6xl">
         {/* Heading aligned with text block */}
-        <h2 className="mb-12 text-3xl font-bold text-gray-800 text-left md:ml-[50%] md:pl-10">
+        <h2 className="mb-16 text-3xl font-bold text-gray-800 text-left md:ml-[50%] md:pl-10">
           Our Services
         </h2>
 
-        <div className="flex flex-col items-center gap-12 md:flex-row md:gap-20 lg:gap-24">
+        <div className="flex flex-col items-center gap-16 md:flex-row md:gap-24">
           {/* LEFT – Overlapping Images */}
           <div className="relative flex-1 md:pr-10">
             <Image
@@ -31,20 +31,24 @@ export default function ServicesSection() {
           </div>
 
           {/* RIGHT – Text Descriptions */}
-          <div className="flex flex-1 flex-col gap-12 md:pl-10">
+          <div className="flex flex-1 flex-col gap-16 md:pl-10 -mt-6">
             {/* HR Module */}
-            <div>
-              <h3 className="mb-3 text-xl font-semibold">HR Module</h3>
-              <p className="max-w-md text-gray-600">
-                Keep employee records, manage shifts, leave requests and attendance.
+            <div className="rounded-2xl border border-transparent shadow-lg bg-white p-16 transition-all w-full max-w-3xl">
+              <h3 className="mb-6 text-2xl font-bold flex items-center gap-2">
+                <span role="img" aria-label="building">🏢</span> HR Module
+              </h3>
+              <p className="text-lg text-gray-600 text-lg">
+                Keep your employee records, manage their work schedules/shifts, manage their leave requests and performance appraisal and keep track of their attendance. Suitable for organizations of all sizes
               </p>
             </div>
 
             {/* Membership Module */}
-            <div>
-              <h3 className="mb-3 text-xl font-semibold">Membership Module</h3>
-              <p className="max-w-md text-gray-600">
-                Manage member records, meeting times, attendance and absenteeism.
+            <div className="rounded-2xl border border-transparent shadow-lg bg-white p-16 transition-all w-full max-w-3xl">
+              <h3 className="mb-6 text-2xl font-bold flex items-center gap-3">
+                <span role="img" aria-label="members">👥</span> Membership Module
+              </h3>
+              <p className="text-lg text-gray-700">
+                 Keep your member records, manage their meeting times, attendance, lateness and absenteeism. Suitable for religious organizations, schools, event centers, etc.
               </p>
             </div>
           </div>
