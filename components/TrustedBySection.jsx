@@ -12,8 +12,8 @@ import logo10 from '@/images/sigma.jpg';
 
 export default function TrustedBySection() {
   return (
-    <section className="mt-64 px-6 py-20 bg-gray-50 text-center">
-      <h2 className="text-2xl md:text-5xl font-bold text-gray-800 mb-12">
+    <section className="mt-64 px-4 py-10 bg-gray-50 text-center">
+      <h2 className="text-2xl md:text-5xl font-medium  text-gray-2000 mb-12">
         Trusted by organizations of all sizes and types
       </h2>
       <div className="flex flex-wrap justify-center items-center gap-12 max-w-6xl mx-auto">
